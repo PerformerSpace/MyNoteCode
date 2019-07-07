@@ -2,7 +2,9 @@ package com.jyf.code;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.ReferenceQueue;
-
+/*
+* 虚引用demo
+* */
 public class PhantomReferenceCode {
     public static void main(String[] args) {
         Object o1 = new Object();

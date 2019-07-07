@@ -2,7 +2,9 @@ package com.jyf.code;
 
 import java.lang.ref.ReferenceQueue;
 import java.lang.ref.WeakReference;
-
+/*
+* 弱引用demo
+* */
 public class WeakReferenceCode {
     public static void main(String[] args) {
         Object o1 = new Object();
@@ -18,8 +20,5 @@ public class WeakReferenceCode {
         System.out.println(o1);//null
         System.out.println(objectReferenceQueue.poll());//unnull ,回收前需要被引用队列保存
         System.out.println(weakReference.get());//null
-
-
-
     }
 }
