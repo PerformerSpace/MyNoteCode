@@ -10,7 +10,6 @@ public class WeakReferenceCode {
         Object o1 = new Object();
         ReferenceQueue<Object> objectReferenceQueue = new ReferenceQueue<>();
         WeakReference<Object> weakReference = new WeakReference<>(o1,objectReferenceQueue);
-
         System.out.println(o1);//unnull
         System.out.println(objectReferenceQueue.poll());//null
         System.out.println(weakReference.get());//unnull

@@ -10,7 +10,6 @@ public class PhantomReferenceCode {
         Object o1 = new Object();
         ReferenceQueue<Object> objectReferenceQueue = new ReferenceQueue<>();
         PhantomReference<Object> objectPhantomReference = new PhantomReference<>(o1, objectReferenceQueue);
-
         System.out.println(o1);//unnull
         System.out.println(objectReferenceQueue.poll());//null
         System.out.println(objectPhantomReference.get());//null
